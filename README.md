@@ -17,15 +17,15 @@ SRun3K Stupid
 ----
 1. 运行SRun3K.py可启动基于PySide的GUI：
 
-    python3 SRun3K.py
+        $ python3 SRun3K.py
 
 1. core.py作为程序的核心，同时又可以作为一个命令行版单独运行，而且兼容Python 2和3：
 
-    python3 core.py
+        $ python3 core.py
 
-    python core.py
+        $ python core.py
 
 1. 编译成可执行程序：
 
-    python setup.py build
+        $ python setup.py build
 
