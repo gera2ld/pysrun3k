@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>330</width>
+    <height>234</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SRun3K Stupid v1.0</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <property name="fieldGrowthPolicy">
+       <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+      </property>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelUsr">
+        <property name="text">
+         <string>&amp;User:</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="buddy">
+         <cstring>editUsr</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="editUsr"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="labelPwd">
+        <property name="text">
+         <string>&amp;Password:</string>
+        </property>
+        <property name="buddy">
+         <cstring>editPwd</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="editPwd"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="labelMAC">
+        <property name="text">
+         <string>&amp;MAC:</string>
+        </property>
+        <property name="buddy">
+         <cstring>editMAC</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="editMAC"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="btMAC">
+        <property name="text">
+         <string>&amp;Get MAC of current device</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="labelHost">
+        <property name="text">
+         <string>&amp;Host:</string>
+        </property>
+        <property name="buddy">
+         <cstring>editHost</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="editHost"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="cbRemember">
+        <property name="text">
+         <string>&amp;Remember me</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="btLog">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="default">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="btHide">
+        <property name="text">
+         <string>Minimize to &amp;tray</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="cbAutoLogin">
+        <property name="text">
+         <string>Log in at &amp;start up</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <tabstops>
+  <tabstop>editUsr</tabstop>
+  <tabstop>editPwd</tabstop>
+  <tabstop>editMAC</tabstop>
+  <tabstop>btMAC</tabstop>
+  <tabstop>cbRemember</tabstop>
+  <tabstop>btLog</tabstop>
+  <tabstop>btHide</tabstop>
+ </tabstops>
+ <resources>
+  <include location="srun3k.qrc"/>
+ </resources>
+ <connections/>
+</ui>

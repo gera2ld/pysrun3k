@@ -1,0 +1,5 @@
+__pycache__/
+_eric5project/
+.ropeproject/
+*.conf
+*.bat
