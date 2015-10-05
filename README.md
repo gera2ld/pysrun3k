@@ -29,3 +29,6 @@ SRun3K Stupid
 
         $ python setup.py build
 
+其他版本
+---
+* 小巧方便的[.NET版本](https://github.com/gera2ld/srun3k)
